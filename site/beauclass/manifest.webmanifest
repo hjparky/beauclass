@@ -1,0 +1,27 @@
+{
+  "name": "뷰클래스 아카데미 — 런던 사순아카데미 코스",
+  "short_name": "뷰클래스",
+  "description": "뷰클래스 아카데미 메인 랜딩 페이지 (Hero, 과정, 강사진, Q&A, 위치)",
+  "lang": "ko-KR",
+  "dir": "ltr",
+  "start_url": "../../index.html",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6F5F2",
+  "theme_color": "#3E6A6E",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

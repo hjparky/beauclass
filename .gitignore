@@ -1,0 +1,8 @@
+# Kilo / Agent Manager tooling metadata
+.kilo/
+
+# Obsidian vault settings
+.obsidian/
+
+# Dependency graph cache
+.dependencygraph/

@@ -25,6 +25,8 @@ beauclass/
 ├── teacher-james-greaves.html   # James Greaves 크리에이티브 디렉터 프로필
 ├── teacher-riess-hatcher.html   # Riess Hatcher 교장 프로필
 │
+├── teachers-section.html        # index.html / teachers.html 공용 강사진 섹션 스니펫 (동기화 원본)
+│
 ├── assets/
 │   ├── css/
 │   │   ├── main.css             # 메인 스타일시트
@@ -40,7 +42,10 @@ beauclass/
         ├── event/
         ├── teacher/
         ├── policy.html
-        └── student.html
+        ├── student.html
+        ├── manifest.webmanifest  # 로컬 PWA 매니페스트 (아이콘/시작 URL)
+        ├── icon-192.png          # PWA 아이콘 192x192
+        └── icon-512.png          # PWA 아이콘 512x512
 ```
 
 ---
