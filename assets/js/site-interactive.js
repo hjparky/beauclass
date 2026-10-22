@@ -177,24 +177,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // 1. Consultation Button Setup
             const counselBtn = card.querySelector('.btn-course-counsel') || card.querySelector('a[href*="apply-"], a[href^="tel:"]');
             if (counselBtn) {
-                const phoneConsultNumber = '010-7540-1607';
-                counselBtn.setAttribute('href', `tel:${phoneConsultNumber}`);
+                const applyUrl = './apply.html#apply';
+                counselBtn.setAttribute('href', applyUrl);
                 counselBtn.setAttribute('data-course-title', courseTitle);
-                counselBtn.setAttribute('title', `'${courseTitle}' 과정 상담 전화 연결`);
+                counselBtn.setAttribute('title', `'${courseTitle}' 과정 상담 신청하기`);
 
-                counselBtn.addEventListener('click', function(e) {
-                    console.log(`[상담 연결] 과정명: ${courseTitle}`);
-                    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-                    if (!isMobile) {
-                        e.preventDefault();
-                        const consultMsg = `[뷰클래스 아카데미 교육 과정 상담 문의]\n과정명: ${courseTitle}\n\n전화 상담(${phoneConsultNumber})으로 바로 연결하시겠습니까?\n('취소'를 누르면 카카오톡 상담 채널로 연결됩니다.)`;
-                        if (confirm(consultMsg)) {
-                            window.location.href = `tel:${phoneConsultNumber}`;
-                        } else {
-                            // 카카오톡 오픈채팅 / 채널로 직접 연결
-                            window.open(`https://pf.kakao.com/_xoxbxbG?text=${encodeURIComponent('안녕하세요, [' + courseTitle + '] 과정 수강 상담 문의드립니다.')}`, '_blank');
-                        }
-                    }
+                counselBtn.addEventListener('click', function() {
+                    console.log(`[상담 신청] 과정명: ${courseTitle}`);
                 });
             }
 
@@ -839,10 +828,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
                 if (!isMobile) {
                     e.preventDefault();
-                    if (confirm('[뷰클래스 아카데미 상담 문의]\n전화(010-7540-1607)로 통화하시겠습니까?\n(\'취소\'를 누르면 카카오톡 상담 채널로 연결됩니다.)')) {
+                    if (confirm('[뷰클래스 아카데미 상담 문의]\n전화(010-7540-1607)로 통화하시겠습니까?\n(\'취소\'를 누르면 신청·문의 페이지로 이동합니다.)')) {
                         window.location.href = 'tel:010-7540-1607';
                     } else {
-                        window.open('https://pf.kakao.com/_xoxbxbG', '_blank');
+                        window.location.href = './apply.html#apply';
                     }
                 }
             });
