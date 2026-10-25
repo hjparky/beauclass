@@ -1,10 +1,10 @@
-// courseData.js - 뷰클래스 아카데미 8개 전체 교육과정 상세 커리큘럼 데이터
+﻿// courseData.js - 뷰클래스 아카데미 8개 전체 교육과정 상세 커리큘럼 데이터
 const COURSES_DATA = [
   {
     id: "course-senior",
     title: "4060 시니어 고객을 위한 트렌드 헤어 A to Z",
     level: "3단계 실전",
-    category: "커트 · 단기 집중",
+    category: "커트 · 세미나",
     duration: "6주 · 주 1회 · 회차당 3~4시간 · 정원 8명~10명",
     price: "80만원",
     sessionsCount: 5,
@@ -191,10 +191,10 @@ const COURSES_DATA = [
   },
   {
     id: "course-sassoon27-seminar",
-    title: "2027 사순 트렌드 cut&color 한국 컬렉션 세미나",
-    level: "단기 집중",
-    category: "단기 집중",
-    duration: "2day · 오후 6:00 ~ 9:00",
+    title: "2027 사순 트렌드 CUT&COLOR 한국 컬렉션 세미나",
+    level: "세미나",
+    category: "세미나",
+    duration: "1day · 오후 6:00 ~ 9:00",
     price: "15만원",
     sessionsCount: 8,
     curriculum: [
@@ -242,9 +242,9 @@ const COURSES_DATA = [
   },
   {
     id: "course-sassoon27-oneday",
-    title: "2027 사순 트렌드 cut&color Follow along 1day course",
+    title: "2027 사순 트렌드 CUT&COLOR Follow along 1day course",
     level: "3단계 실전",
-    category: "커트 · 단기 집중",
+    category: "커트 · 세미나",
     duration: "1Day · 오전 10:00~13:00 / 오후 14:00~17:00 · 30명",
     price: "55만 원 (컬렉션 티켓 포함)",
     sessionsCount: 4,
@@ -348,7 +348,7 @@ const COURSES_DATA = [
       },
       {
         session: "4회차",
-        title: "Creative Cut & Color Harmony (컷과 컬러의 일체화)",
+        title: "Creative CUT & COLOR Harmony (컷과 컬러의 일체화)",
         detail: "커트 선과 컬러 배치가 시너지를 내는 오뜨꾸뛰르 살롱 믹스매치"
       },
       {
